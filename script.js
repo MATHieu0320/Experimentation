@@ -61,3 +61,24 @@ tableau.splice(0, 1, "ajoute");
 console.log(tab);
 // console.log(tableau.splice(0, 1, "ajoute"));
 console.log(tableau);
+let bouleen;
+// function change(bouleen) {
+//   if (bouleen == true) {
+//     bouleen = false;
+//     h1.style.background = "green";
+//   } else {
+//     bouleen = true;
+//     h1.style.background = "red";
+//   }
+//   return bouleen;
+// }
+
+h1.addEventListener("click", () => {
+  if (bouleen == true) {
+    bouleen = false;
+    h1.style.background = "green";
+  } else {
+    bouleen = true;
+    h1.style.background = "red";
+  }
+});
