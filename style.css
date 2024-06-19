@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: navy;
+}
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 25px 50px;
+}
+#ul-1 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+.absolute {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: hotpink;
+  width: 200px;
+  left: -1rem;
+}
+.sub-menu {
+  padding: 0 15px 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 16px;
+  border-radius: 0.5rem;
+}
+.block {
+  display: block;
+}
+/* balance egaliser le texte sur une ligne */
+/* pretty avoir au moins 2 mots sur une ligne à la fin */
+/* no-wrap saute 0 ligne */
+.wrap {
+  display: flex;
+  gap: 150px;
+}
+.wrap h2,
+#balance {
+  text-wrap: balance;
+  max-width: 250px;
+  text-align: center;
+}
+
+.wrap p,
+#pretty {
+  text-wrap: pretty;
+  max-width: 250px;
+}
+/* ul li {
+  position: relative;
+  transition: after 3s;
+  -webkit-transition: after 3s;
+}
+
+li:hover::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: aquamarine;
+  top: 25px;
+  left: 0;
+  transition: 0.3s;
+} */
+ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 0 10;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  top: 20px;
+  transition: 0.5s;
+}
+a:hover::after {
+  width: 100%;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.aspect {
+  height: 50px;
+  aspect-ratio: 1;
+  background: red;
+}
